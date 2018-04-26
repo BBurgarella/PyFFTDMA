@@ -23,8 +23,9 @@ to when this parameter is 1, the branch is a maxewll branch
 The RVE generation parameters are gathered in the VER class
 - the first parameter is the fiber volume ratio
 - the second gives the number of fiber to be placed in the RVE
-- The third gives elongation ratio of the inclusions
-- The fourth the resolution
+- the third one gives N the orientation distribution parameter
+- The fourth gives elongation ratio of the inclusions
+- The fith the resolution
 - the last one is a seed for the random variables in the generation
 
 The DMA is handled by the DMA class
@@ -57,3 +58,25 @@ TestDMA = DMA('F',[0.1,13,2],[100,110,120,130,140,150,160,170,180,190,200],TestM
 TestDMA.GenerateInstructionfile()
 TestDMA.RunTempScan()
 ```
+
+The FscanAll.py file is used to post treat the CraFT results, it is configures through this code:
+```
+###############################################################
+#  Définition des listes de fréquence, température et essais  #
+###############################################################
+
+C1 = 180
+C2 = 900
+Tref = 160
+ListN = [10]
+NbChargements = 5
+ListEssais = [10,20]
+ListFreq = [0.1, 0.2, 0.4, 0.8, 1.6, 3.2, 6.4,12.8]
+ListTemp = [100, 110, 120, 130, 140, 150, 160, 170, 180, 190, 200]
+```
+
+C1 and C2 are the parameters for the shift factors
+Tref is the reference temperature
+ListN is the list of N (the orientation distribution parameter)
+NbChargement should remain equal to 5 since nothing is implemented to change
+The other different lists defines the cases that will be post-treated
