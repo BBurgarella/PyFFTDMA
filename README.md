@@ -30,8 +30,8 @@ The RVE generation parameters are gathered in the VER class
 - The fith the resolution
 - the last one is a seed for the random variables in the generation
 
-The DMA is handled by the DMA class
-a DMA is defined by:
+The DMA is handled by the DMA class.
+A DMA is defined by:
   - A scan type (Frequency or temperature): "F" for frequency, "T" for a temperature scan
   - A frequency sample in the form of a list [F0,Ffin,Multiplication between two points]
   - A Material (see the material class in the code)
