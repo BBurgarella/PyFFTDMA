@@ -1,9 +1,11 @@
 # PyFFTDMA
 PyFFTDMA is a series of python programs written by Boris Burgarella during his PhD.
-The objective is to have a fully python handled full field homogenization model
+The objective is to have a python-CraFT interface allowing a fully automated run of virtual dynamic mechanical analyses.
 
 Dependencies:
 - CraFT (http://craft.lma.cnrs-mrs.fr/)
+- numpy (http://www.numpy.org/)
+- matplotlib (https://matplotlib.org/)
 
 PyFFTDMA is divided in two main components:
 Main.py --> takes care of the RVE generation and the CraFT calls
