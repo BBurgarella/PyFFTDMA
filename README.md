@@ -2,7 +2,7 @@
 PyFFTDMA is a series of python programs written by Boris Burgarella during his PhD.
 The objective is to have a fully python handled full field homogenization model
 
-Depdencies:
+Dependencies:
 - CraFT (http://craft.lma.cnrs-mrs.fr/)
 
 PyFFTDMA is divided in two main components:
@@ -59,7 +59,7 @@ TestDMA.GenerateInstructionfile()
 TestDMA.RunTempScan()
 ```
 
-The FscanAll.py file is used to post treat the CraFT results, it is configures through this code:
+The FscanAll.py file is used to post treat the CraFT results, it is configured through this code:
 ```
 ###############################################################
 #  Définition des listes de fréquence, température et essais  #
